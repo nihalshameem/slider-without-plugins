@@ -1,3 +1,8 @@
+/*
+* Author: Nihal Shameem
+*/
+
+/* common */
 body {
   margin: 0;
   padding: 0;
@@ -6,10 +11,174 @@ body {
 .container {
   max-width: 1152px;
   max-height: 750px;
-  background-color: aqua;
-  margin: 50px auto;
+  padding: 30px;
+  margin: auto;
 }
-.container h2 {
+.container h5 {
   border-left: 10px solid #242021;
   text-transform: uppercase;
+  padding: 10px;
+}
+.container p {
+  font-style: italic;
+  width: 60%;
+  margin-left: 20px;
+}
+
+/* carousel slider */
+.carousel-container {
+  max-width: 2152px;
+  margin: 50px auto;
+  min-height: 200px;
+  position: relative;
+  background-image: url(../images/bg-cover.png);
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carousel-container {
+    width: 85%;
+  }
+}
+.carousel-container .carousel-inner {
+  overflow: hidden;
+  height: inherit;
+  overflow: hidden;
+}
+.carousel-container .track {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel-container .card-container {
+  width: 259px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 90px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 120px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.carousel-container .card-container.active {
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+  border: 2px solid #d6d6d6;
+  background-image: url(../images/wheel-bg.jpg);
+  width: 200px;
+  margin-right: 60px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.carousel-container .card-container .card {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nav button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  background: transparent;
+}
+.nav button i {
+  font-size: 15px;
+}
+.nav .prev {
+  left: 30px;
+}
+.nav .next {
+  right: 30px;
+}
+
+.card > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.card .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  width: 150px;
+  margin: auto;
+}
+.card .info {
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  background: #333;
+  color: #fff;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.card p {
+  font-size: 13px;
+  text-align: center;
+}
+.slide-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal !important;
+  width: 100% !important;
+  margin: auto !important;
+}
+.description {
+  text-transform: capitalize;
+  text-align: center;
+  margin: auto !important;
+  width: 100% !important;
+  font-style: normal !important;
+}
+.short {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.short:before {
+  content: "(";
+}
+.short:after {
+  content: ")";
 }
