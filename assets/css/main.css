@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Varta";
+}
+.container {
+  max-width: 1152px;
+  max-height: 750px;
+  background-color: aqua;
+  margin: 50px auto;
+}
+.container h2 {
+  border-left: 10px solid #242021;
+  text-transform: uppercase;
+}
