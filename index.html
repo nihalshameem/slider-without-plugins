@@ -5,15 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slider</title>
+    <!-- Google font -->
     <link
       href=" https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles -->
     <link href="assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <h2>wheels</h2>
+      <h5>wheels</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In rem beatae,
+        maxime aperiam eaque quo inventore molestiae ipsam maiores ea dolores.
+      </p>
+
+      <!-- carousel slider block -->
+      <div class="carousel-container">
+        <div class="carousel-inner">
+          <div class="track">
+            <!-- single slider card -->
+            <div class="card-container active" onclick="activate(this)">
+              <div class="card">
+                <img class="img" src="assets/images/wgu.png" alt="" />
+                <p class="slide-heading">
+                  17-inch cast aluminum wheel, fully painted silver litho
+                </p>
+                <p class="description">standard on touring FWD</p>
+                <span class="short">wgu</span>
+              </div>
+            </div>
+            <!-- single slider card -->
+            <div class="card-container" onclick="activate(this)">
+              <div class="card">
+                <img class="img" src="assets/images/wjr.png" alt="" />
+                <p class="slide-heading">
+                  17-inch cast aluminum diamond-cut wheel with baltic gray
+                  pockets
+                </p>
+                <p class="description">
+                  standard on Touring LFWD/hybrid and Touring Hybrid
+                </p>
+                <span class="short">wjr</span>
+              </div>
+            </div>
+            <!-- single slider card -->
+            <div class="card-container" onclick="activate(this)">
+              <div class="card">
+                <img class="img" src="assets/images/wp6.png" alt="" />
+                <p class="slide-heading">
+                  17-inch cast aluminum wheel with foreshadow finish
+                </p>
+                <p class="description">
+                  included with S appearence package on Touring Hybrid, Touring
+                  L Hybrid and Limited Hybrid
+                </p>
+                <span class="short">wp6</span>
+              </div>
+            </div>
+            <!-- single slider card -->
+            <div class="card-container" onclick="activate(this)">
+              <div class="card">
+                <img class="img" src="assets/images/wpf.png" alt="" />
+                <p class="slide-heading">
+                  17-inch cast aluminum diamond-cut wheel with baltic gray
+                  pockets
+                </p>
+                <p class="description">
+                  standard on Touring LFWD/hybrid and Touring Hybrid
+                </p>
+                <span class="short">wpf</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- prev and next buttons -->
+        <div class="nav">
+          <button class="prev" disabled="true">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </body>
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
 </html>
